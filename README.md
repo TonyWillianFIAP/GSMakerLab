@@ -16,7 +16,7 @@
 ```
 braco-robotico/
 │
-├── firmware/
+├── codigo/
 │   └── robotic_arm_tinkercad.ino   # Código Arduino — controle dos servos
 │
 ├── models/
@@ -24,8 +24,6 @@ braco-robotico/
 │   └── grip.stl                    # Exportação para impressão 3D
 │
 ├── images/
-│   ├── circuito_tinkercad.png      # Print do circuito simulado
-│   ├── serial_monitor.png          # Monitor Serial em funcionamento
 │   └── garra_render.png            # Render do modelo 3D
 │
 └── README.md
