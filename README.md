@@ -16,15 +16,14 @@
 ```
 braco-robotico/
 │
-├── codigo/
+├── code/
 │   └── robotic_arm_tinkercad.ino   # Código Arduino — controle dos servos
 │
 ├── models/
-│   ├── grip.scad                   # Modelo 3D paramétrico (OpenSCAD)
-│   └── grip.stl                    # Exportação para impressão 3D
+│   ├── ARQUIVO DO MODELO 3D              # Exportação para impressão 3D
 │
 ├── images/
-│   └── garra_render.png            # Render do modelo 3D
+│   └── PRINT MODELO 3D           # Render do modelo 3D
 │
 └── README.md
 ```
