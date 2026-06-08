@@ -84,13 +84,12 @@ ARDUINO UNO
 
 ### 2. Comandos disponíveis
 
-| Comando | Ação | Posição |
-|---|---|---|
-| `U` | Ombro vai para **cima** | 150° |
-| `M` | Ombro vai para o **meio** | 90° |
-| `D` | Ombro vai para **baixo** | 30° |
-| `O` | Garra **abre** | 60° |
-| `C` | Garra **fecha** — captura a amostra | 10° |
+| Comando | Ação |
+|---|---|
+| `U` | Ombro vai para **cima** |
+| `D` | Ombro vai para **baixo** |
+| `O` | Garra **abre** |
+| `C` | Garra **fecha** — captura a amostra | 
 
 > O sistema aceita letras minúsculas e maiúsculas.
 
