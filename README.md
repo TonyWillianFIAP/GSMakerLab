@@ -19,7 +19,7 @@ braco-robotico/
 ├── code/
 │   └── robotic_arm_tinkercad.ino   # Código Arduino — controle dos servos
 │
-├── models/
+├── model/
 │   ├── GS2026.scad           # Exportação para impressão 3D
 │
 ├── images/
