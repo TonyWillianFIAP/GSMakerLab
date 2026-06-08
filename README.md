@@ -1,4 +1,4 @@
-# 🦾 Braço Robótico de Coleta de Amostras
+# Braço Robótico de Coleta de Amostras
 ### Docking & Retrieval — Missão Microgravidade
 
 > Projeto de robótica espacial com Arduino Uno: braço robótico controlado via Monitor Serial com 2 servomotores SG90 e LED de status. Inclui simulação no Tinkercad e modelo 3D paramétrico da garra em OpenSCAD.
@@ -11,7 +11,7 @@
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 braco-robotico/
@@ -30,7 +30,7 @@ braco-robotico/
 
 ---
 
-## 🛒 Componentes
+## Componentes
 
 | Componente | Qtd | Observação |
 |---|---|---|
@@ -44,7 +44,7 @@ braco-robotico/
 
 ---
 
-## ⚡ Esquema de Ligação
+## Esquema de Ligação
 
 ```
 FONTE DE ALIMENTAÇÃO (6V)
@@ -58,7 +58,7 @@ ARDUINO UNO
   GND      ──── Barramento – da protoboard  ← GND COMUM (obrigatório)
 ```
 
-> ⚠️ O GND do Arduino e o GND da fonte **devem estar no mesmo barramento** da protoboard. Sem isso os servos não respondem.
+> O GND do Arduino e o GND da fonte **devem estar no mesmo barramento** da protoboard. Sem isso os servos não respondem.
 
 ### Tabela de pinos
 
@@ -70,7 +70,7 @@ ARDUINO UNO
 
 ---
 
-## 🖥️ Como usar no Tinkercad
+## Como usar no Tinkercad
 
 ### 1. Iniciar a simulação
 
@@ -81,13 +81,12 @@ ARDUINO UNO
 
 ### 2. Comandos disponíveis
 
-| Comando | Ação | Posição |
+| Comando | Ação | 
 |---|---|---|
-| `U` | Ombro vai para **cima** | 150° |
-| `M` | Ombro vai para o **meio** | 90° |
-| `D` | Ombro vai para **baixo** | 30° |
-| `O` | Garra **abre** | 60° |
-| `C` | Garra **fecha** — captura a amostra | 10° |
+| `U` | Ombro vai para **cima** |
+| `D` | Ombro vai para **baixo** | 
+| `O` | Garra **abre** | 
+| `C` | Garra **fecha** — captura a amostra | 
 
 > O sistema aceita letras minúsculas e maiúsculas.
 
@@ -102,7 +101,7 @@ ARDUINO UNO
 
 ---
 
-## 💡 LED de status
+## LED de status
 
 | Padrão | Significado |
 |---|---|
@@ -113,10 +112,10 @@ ARDUINO UNO
 
 ---
 
-## 📐 Modelo 3D — Garra Paramétrica
+## Modelo 3D — Garra Paramétrica
 
 
-## 📸 Imagens
+## Imagens
 
 ### Circuito simulado — Tinkercad
 
@@ -127,7 +126,7 @@ ARDUINO UNO
 ### Modelo 3D — Garra
 
 
-## 👤 Autores
+## Autores
 
 João Rodrigo Solano Nogueira RM 551319 
 Julia Amorim Bezerra RM 99609 
