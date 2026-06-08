@@ -1,17 +1,17 @@
-# 🦾 Braço Robótico de Coleta de Amostras
+# Braço Robótico de Coleta de Amostras
 ### Docking & Retrieval — Missão Microgravidade
 
 > Projeto de robótica espacial com Arduino Uno: braço robótico controlado via Monitor Serial com 2 servomotores SG90 e LED de status. Inclui simulação no Tinkercad e modelo 3D paramétrico da garra em OpenSCAD.
 
 ---
 
-## Links
+## Link
 
 **Simulador Tinkercad** | https://www.tinkercad.com/things/cqUtWiq2RES-braco-robotico-gs/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard&sharecode=oAwwiPhLlkZ0bLWyZTrHQUvW-zTJaHNb8wejktAVEA4
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 braco-robotico/
@@ -19,18 +19,21 @@ braco-robotico/
 ├── code/
 │   └── robotic_arm_tinkercad.ino   # Código Arduino — controle dos servos
 │
-├── models/
-│   ├── ARQUIVO DO MODELO 3D              # Exportação para impressão 3D
+├── model/
+│   ├── GS2026.scad             # Exportação para impressão 3D
 │
 ├── images/
-│   └── PRINT MODELO 3D           # Render do modelo 3D
+│   └── Print1          # Render do modelo 3D
+│   └── Print2
+│   └── Print3
+│   └── Print4
 │
 └── README.md
 ```
 
 ---
 
-## 🛒 Componentes
+## Componentes
 
 | Componente | Qtd | Observação |
 |---|---|---|
@@ -44,7 +47,7 @@ braco-robotico/
 
 ---
 
-## ⚡ Esquema de Ligação
+## Esquema de Ligação
 
 ```
 FONTE DE ALIMENTAÇÃO (6V)
@@ -58,7 +61,7 @@ ARDUINO UNO
   GND      ──── Barramento – da protoboard  ← GND COMUM (obrigatório)
 ```
 
-> ⚠️ O GND do Arduino e o GND da fonte **devem estar no mesmo barramento** da protoboard. Sem isso os servos não respondem.
+> O GND do Arduino e o GND da fonte **devem estar no mesmo barramento** da protoboard. Sem isso os servos não respondem.
 
 ### Tabela de pinos
 
@@ -70,7 +73,7 @@ ARDUINO UNO
 
 ---
 
-## 🖥️ Como usar no Tinkercad
+## Como usar no Tinkercad
 
 ### 1. Iniciar a simulação
 
@@ -81,13 +84,12 @@ ARDUINO UNO
 
 ### 2. Comandos disponíveis
 
-| Comando | Ação | Posição |
-|---|---|---|
-| `U` | Ombro vai para **cima** | 150° |
-| `M` | Ombro vai para o **meio** | 90° |
-| `D` | Ombro vai para **baixo** | 30° |
-| `O` | Garra **abre** | 60° |
-| `C` | Garra **fecha** — captura a amostra | 10° |
+| Comando | Ação |
+|---|---|
+| `U` | Ombro vai para **cima** |
+| `D` | Ombro vai para **baixo** |
+| `O` | Garra **abre** |
+| `C` | Garra **fecha** — captura a amostra |
 
 > O sistema aceita letras minúsculas e maiúsculas.
 
@@ -102,7 +104,7 @@ ARDUINO UNO
 
 ---
 
-## 💡 LED de status
+## LED de status
 
 | Padrão | Significado |
 |---|---|
@@ -113,10 +115,23 @@ ARDUINO UNO
 
 ---
 
-## 📐 Modelo 3D — Garra Paramétrica
+## Modelo 3D — Garra Paramétrica
 
+O projeto inclui uma garra robótica paramétrica desenvolvida em OpenSCAD para simular a coleta de amostras em ambientes de microgravidade.
 
-## 📸 Imagens
+A modelagem foi construída utilizando parâmetros configuráveis, permitindo alterar facilmente dimensões como comprimento dos dedos, largura da garra, abertura de captura e dimensões da estrutura principal sem necessidade de remodelagem manual.
+
+### Características do modelo
+
+* Desenvolvimento em OpenSCAD.
+* Estrutura paramétrica baseada em variáveis.
+* Dois dedos de captura com geometria otimizada para coleta de amostras.
+* Recortes estruturais para redução de massa.
+* Furos de fixação compatíveis com servomotores SG90 (9g).
+* Pino traseiro de montagem para integração ao braço robótico.
+* Exportação em formato STL para fabricação digital ou impressão 3D.
+
+## Imagens
 
 ### Circuito simulado — Tinkercad
 
@@ -127,7 +142,7 @@ ARDUINO UNO
 ### Modelo 3D — Garra
 
 
-## 👤 Autores
+## Autores
 
 João Rodrigo Solano Nogueira RM 551319 
 Julia Amorim Bezerra RM 99609 
